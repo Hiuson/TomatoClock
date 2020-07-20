@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		88DD797124BC02BB008518DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88DD797024BC02BB008518DB /* Assets.xcassets */; };
 		88DD797424BC02BB008518DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88DD797224BC02BB008518DB /* LaunchScreen.storyboard */; };
 		88DD797F24BC02BC008518DB /* TomatoClockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DD797E24BC02BB008518DB /* TomatoClockTests.swift */; };
+		88DD79C124BC343D008518DB /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 88DD79C024BC343D008518DB /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88DD79C124BC343D008518DB /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,6 +117,9 @@
 			dependencies = (
 			);
 			name = TomatoClock;
+			packageProductDependencies = (
+				88DD79C024BC343D008518DB /* SnapKit */,
+			);
 			productName = TomatoClock;
 			productReference = 88DD796424BC02B8008518DB /* TomatoClock.app */;
 			productType = "com.apple.product-type.application";
@@ -165,6 +170,9 @@
 				Base,
 			);
 			mainGroup = 88DD795B24BC02B8008518DB;
+			packageReferences = (
+				88DD79BF24BC343D008518DB /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 88DD796524BC02B8008518DB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -294,7 +302,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -348,7 +356,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -469,6 +477,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		88DD79BF24BC343D008518DB /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		88DD79C024BC343D008518DB /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 88DD79BF24BC343D008518DB /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 88DD795C24BC02B8008518DB /* Project object */;
 }
